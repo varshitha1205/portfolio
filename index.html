@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Varshitha Reddy Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { color: #333; }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(to bottom right, #d8b4fe, #fbcfe8, #bfdbfe);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 { font-size: 3rem; color: #6b21a8; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; margin-bottom: 20px; color: #4b5563; }
+    .btn {
+      background-color: #7c3aed;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover { background-color: #6d28d9; }
+
+    section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+    h2 { font-size: 2rem; color: #1d4ed8; margin-bottom: 10px; }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .project-btn {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #9333ea;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .project-btn:hover { background-color: #7e22ce; }
+
+    footer {
+      background: #ede9fe;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 60px auto;
+      max-width: 400px;
+    }
+    footer h3 { color: #6b21a8; margin-bottom: 20px; }
+    footer p { margin: 6px 0; font-size: 14px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Varshitha Reddy</h1>
+    <p>B.Tech in CSE (AI & ML) | CMR Technical Campus</p>
+    <button class="btn" onclick="document.getElementById('projects').scrollIntoView()">View Projects</button>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      I am a dedicated B.Tech student at CMR Technical Campus, currently immersed in the fascinating
+      world of Computer Science with a strong emphasis on Artificial Intelligence and Machine Learning.
+      I strive to understand both theoretical and practical applications of AI/ML.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> C++, Python, HTML, CSS, JavaScript</p>
+    <p><strong>Database:</strong> MySQL</p>
+    <p><strong>Tools:</strong> Git, GitHub, VSCode, PyCharm</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Wireless Noticeboard Display using Bluetooth</h3>
+      <p><strong>Arduino IDE, Bluetooth Module, LCD Display, Buzzer</strong></p>
+      <p>
+        The noticeboard uses a Bluetooth module (HC-05/HC-06) to receive messages from a mobile phone or computer.
+      </p>
+      <a class="project-btn" href="https://github.com/varshitha1205/wireless_noticeboard_display_using_bluetooth" target="_blank">View Details</a>
+    </div>
+
+    <div class="card">
+      <h3>College Chatbot</h3>
+      <p><strong>TensorFlow, Flask, NumPy</strong></p>
+      <p>
+        Created an AI-powered chatbot for college queries with a dynamic web interface.
+      </p>
+      <a class="project-btn" href="https://github.com/varshitha1205/College_ChatBot" target="_blank">View Details</a>
+    </div>
+
+    <div class="card">
+      <h3>Library Management System</h3>
+      <p><strong>Java JDK17, JDBC, HTML, JavaScript</strong></p>
+      <p>
+        A library system to manage book check-ins, check-outs, and records.
+      </p>
+      <a class="project-btn" href="https://github.com/varshitha1205/library_management_system_using_java" target="_blank">View Details</a>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Get in Touch</h3>
+    <p>📧 vanchavarshithareddy@gmail.com</p>
+    <p>📞 +91 7075326111</p>
+    <p>
+      <a href="https://www.linkedin.com/in/varshitha-reddy-vancha-56708033a/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/varshitha1205" target="_blank">GitHub</a>
+    </p>
+  </footer>
+  
